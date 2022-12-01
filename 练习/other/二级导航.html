@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .clear-both::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+
+        header {
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+        }
+
+        header .box {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        header .head-l,header .head-r { height: inherit; }
+
+        header .head-l { 
+            float: left; 
+            color: red;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        header .head-l:hover {
+            color: lightcoral;
+        }
+
+        header .head-r, ul li { 
+            float: right;
+            margin-left: 50px;
+        }
+
+        header .head-r ul {
+            height: inherit;
+        }
+
+        header .head-r ul li {
+            width: 100px;
+            height: inherit;
+        }
+
+        header .head-r ul li,
+        header .head-r ul li .navBar a {
+            border-radius: 10px;
+        }
+
+        header .head-r ul li:hover a.nav { color: lightcoral; }
+
+        header .head-r ul li .navBar {
+            padding-top: 20px;
+            display: none;
+        }
+
+        header .head-r ul li .navBar a:hover { 
+            color: lightcoral;
+            background-color: #eee;
+        }
+
+        header .head-r ul li .navBar a {
+            display: block;
+            margin-top: 5px;
+        }
+
+        header .head-r ul li:hover .navBar { display: block; }
+    </style>
+</head>
+<body>
+    <header class="clear-both">
+        <div class="box">
+            <div class="head-l">
+                LOGO
+            </div>
+            <div class="head-r">
+                <ul>
+                    <li><a class="nav" href="http://baidu.com" target="_blank">BaiDu</a>
+                        <div class="navBar">
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                        </div>
+                    </li>
+                    <li><a class="nav" href="http://baidu.com" target="_blank">BaiDu</a>
+                        <div class="navBar">
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                        </div>
+                    </li>
+                    <li><a class="nav" href="http://baidu.com" target="_blank">BaiDu</a>
+                        <div class="navBar">
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                        </div>
+                    </li>
+                    <li><a class="nav" href="http://baidu.com" target="_blank">BaiDu</a>
+                        <div class="navBar">
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                            <a href="http://baidu.com" target="_blank">BaiDu</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

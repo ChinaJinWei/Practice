@@ -1,0 +1,83 @@
+    /* 清楚默认样式，工作中不适用 */
+    * {
+        /* 清楚内外边距 */
+        margin: 0;
+        padding: 0;
+        /* 清楚默认列表的样式为空 */
+        list-style: none;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rainContainer {
+        position: relative;
+        height: 400px;
+        border-bottom: 2px solid #fff;
+    }
+
+    .rainContainer .cloud {
+        width: 300px;
+        height: 100px;
+        background-color: #fff;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    .rainContainer .cloud:before {
+        content: "";
+        width: 110px;
+        height: 110px;
+        background-color: #fff;
+        position: absolute;
+        left: 30px;
+        top: -50%;
+        border-radius: 50%;
+        box-shadow: 100px 0px 0px 30px #fff;
+    }
+
+    .rainContainer .rain {
+        width: 250px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        display: flex;
+        justify-content: space-between;
+        z-index: -1;
+    }
+
+    .rainContainer .rain li {
+        width: 10px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 50%;
+        animation-name: rainDown;
+        animation-delay: 0ms;
+        animation-timing-function: ease-in-out;
+        animation-duration: calc(20s / var(--time));
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes rainDown {
+        0% {
+            transform: translateY(0px) scale(1);
+        }
+
+        70% {
+            transform: translateY(340px) scale(1);
+        }
+
+        100% {
+            transform: translateY(340px) scale(0);
+        }
+    }

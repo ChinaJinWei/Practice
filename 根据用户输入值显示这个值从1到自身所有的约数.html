@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <script src="./js/demo.js"></script>
+<style type="text/css">
+    /* 简单给点样式装饰下 */
+    .container {
+        /* 盒模型 */
+        width: 300px;
+        padding: 30px;
+        /* 边框 */
+        border: 1px solid #00000010;
+        /* 边框阴影 */
+        box-shadow: 0px 0px 10px 5px #eee;
+        /* 圆角 */
+        border-radius: 10px;
+        /* 垂直水平居中 */
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .container input {
+        width: 100%;
+        outline: none;
+        border: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #aaaaaa80;
+        margin-bottom: 10px;
+    }
+
+    .container p {
+        font-size: 12px;
+    }
+
+    .container button {
+        background-color: #fff;
+        border: solid 2px #aaaaaa80;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container #result {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .container #result span {
+        font-weight: normal;
+    }
+
+    .container mark {
+        display: block;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h3><label for="integer">请输入一个正整数</label></h3>
+        <input id="integer" type="text" />
+        <p>请点击下方按钮，之后页面会显示您输入的数值从1到自身大小所有的约数</p>
+        <button onclick="calc()">巴啦啦能量：变</button>
+        <div style="display: none;" id="result">
+            您输入的是：
+            <span></span>
+            <br />
+            它的约数有：
+            <span></span>
+        </div>
+        <mark style="display: none;"></mark>
+    </div>
+</body>
+<script type="text/JavaScript">
+    function calc() {
+        // 获取用户输入值
+        var num = parseInt(document.getElementById('integer').value);
+        // 获取父级元素
+        var father = document.getElementById('result');
+        // 获取第一个子级元素且修改文本内容为用户输入值
+        var childrenOne = document.getElementById('result').children[0];
+        // 第一个子级元素文字内容赋值
+        childrenOne.innerHTML = num;
+        // 获取第二个子级元素且修改文本内容为计算后的所有约数
+        var childrenTow = document.getElementById('result').children[2];
+        // 获取 mark 元素作用于输入值有误时显示一个警告
+        var mark = document.getElementsByTagName('mark')[0];
+        console.log(mark);
+
+        // 使用一个空字符串保存结果
+        var str ='';
+        // 使用 for循环遍历这个数值的所有从1到当前数值的值，并且从中找到它的约数
+        if (num != '' && !isNaN(num)) {
+            // 警示内容不显示
+            mark.style.display = 'none';
+            // 约数计算结果显示
+            father.style.display = 'block';
+            for (var i = 1; i <= num; i++) {
+            // 使用 if语句进行判断，当遍历的值能被整除时就是它的约数
+            if (num % i == 0) {
+                    // 输出到网页里所有的约数
+                    str += i + ' ';
+                }
+            }
+            // 将所有获取到的约数值赋值给 childrenTow元素
+            childrenTow.innerHTML = str;
+        } else {
+            // 约数计算结果不显示
+            father.style.display = 'none';
+            // 警示内容显示
+            mark.style.display = 'block';
+            // 修改元素文本内容
+            mark.innerHTML = '请好好输入，闹啥子嘛闹 (╯▔皿▔)╯';
+            
+        }
+    }
+</script>
+</html>

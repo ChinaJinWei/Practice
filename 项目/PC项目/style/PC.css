@@ -1,0 +1,1551 @@
+    /* 初始化所有a标签 */
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    /* 主页面尺寸 */
+    .mod-container {
+        width: 100%;
+        height: 648px;
+    }
+    
+    /* 页眉父级的宽度、背景色、底部边框大小、样式、颜色 */
+    .navBox {  
+        height: 40px;
+        background: #ddd;
+    }
+
+    /* 页眉子级的宽度*/
+    .navBox .navHead {
+        margin: 0 auto; 
+        width: 1200px;
+    }
+
+    /* 页眉左浮动内容 */
+    .navBox .navHead .nav-l {
+        float: left;
+    }
+
+    /* 页眉左浮动城市选择字体样式 */
+    .navBox .navHead .nav-l div {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* 页眉右浮动内容 */
+    .navBox .navHead .nav-r {
+        float: right;
+    }
+
+    /* 去掉ul标签的样式 */
+    .navBox .navHead .nav-r ul { 
+        list-style: none; 
+        margin: 10px 0 0;
+        display: flex;
+    }
+
+    /* 页眉右浮动标题样式 */
+    .navBox .nav-r .head-style {
+        color: #666; 
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    /* 页眉免费注册字体样式 */
+    .navBox .nav-r .register {
+        font-size: 14px;    
+        color: #fc3e3e;
+        margin-left: 14px;
+        cursor: pointer;
+    }
+
+    /* 设置页眉有浮动导航分割线 */
+    .navBox .nav-r .spacer {
+        height: 12px;
+        margin: 3px 18px 0;
+        border: 1px solid #ccc;
+    }
+
+    /*  以上是页眉导航内容 
+        ========================================================================================================== */
+
+    /* 这里是主页搜索父级盒子 */
+    #search {
+        width: 100%;
+        height: 120px;
+        background: #eee;
+    }
+    
+    /* 这里是主页搜索子级盒子 */
+   .search {
+        height: 100%;
+        margin: 0 360px;
+        display: flex;
+    }  
+
+    /* 盒子主标题的盒子 */
+    .search .search-Title {
+        width: 190px;
+        height: 100%; 
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        cursor: default;
+    }
+
+    /* 主标题的margin */
+    .search .search-Title h1 { margin: 0; }
+
+    /* 主次标题同一行 */
+    .search .search-Title .search-row { display: flex; }
+
+    /* 次标题样式 */
+    .search .search-Title .search-row .happy-shop {
+        color: #a0a0a0;
+        font-weight: normal;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    
+    /* 主搜索页盒子 */
+    .search .main-search {
+        margin-left: 120px;
+        width: 890px;
+        height: 100%;
+    }
+
+    /* 主搜索内容划分样式 */
+    .search .main-search ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* 主搜索内容间距 */
+    .main-search .marin-spacing { height: 40px; display: flex;}
+
+    /* 输入框外边框 */
+    .main-search .marin-spacing .border {
+        width: 500px;
+        height: 40px;
+        background: #fff;
+        border: solid 1px #fc3e3e;
+        border-radius: 5px 0 0 5px;
+        display: flex;
+    }
+
+    /* 设置输入框样式 */
+    .main-search .marin-spacing .border input{ 
+        width: 490px; 
+        border: none;
+        outline: 0;
+    }
+
+    /* 输入框右侧字体样式 */
+    .main-search .marin-spacing .search-text {
+        color: #fff;
+        font-size: 16px;
+        background: #fc3e3e;
+        padding: 12px 23px;
+        border-bottom: 18px solid #fc3e3e;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    /* 输入框底部文字样式 */
+    .marin-spacing .input-down {
+        color: #999999;
+        font-size: 14px;
+        margin: 6px 10px 0 0;
+    }
+
+    /* 我的购物车盒子样式 */
+    .main-search .marin-spacing .shop-car {
+        width: 200px;
+        background: #fff;
+        border: solid 1px #cccccc;
+        border-radius: 5px;
+        margin-left: 93px;
+    }
+
+    /* 内边距盒子 */
+    .main-search .marin-spacing .shop-car .in-box { 
+        padding: 11px 0;
+        display: flex; 
+        justify-content: center; 
+        position: relative;
+    }
+
+    /* 购物车LOO尺寸 */
+    .main-search .marin-spacing .shop-car img {
+        width: 20px;
+        height: 18px;
+        margin-left: -11px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+
+    /* 购物车文字样式 */
+    .main-search .marin-spacing .shop-car .shop-text {
+        font-size: 16px;
+        color: #fc3e3e;
+    }
+
+    /* 购物车数量样式 */
+    .marin-spacing .shop-car .in-box .shop-num {
+        padding: 2px 5px;
+        color: #fff;
+        font-size: 11px;
+        background: #fc3e3e;
+        border-radius: 50%;
+        position: absolute;
+        top: 7px;
+        left: 155px;
+    }
+
+    /*  以上是搜索区域全部分
+        ============================================================================================================ */
+
+    /* 导航选项卡父级盒子 */
+    .nav-tab {
+        width: 100%;
+        height: 40px;
+        background: #666;
+    }
+
+    /* 导航选项卡子级盒子 */
+    .nav-tab .main-nav {
+        margin: 0 360px;
+        height: 100%;
+        display: flex;
+    }
+
+    /* 全部商品父级盒子 */
+    .nav-tab .main-nav .all-com {
+        width: 200px;
+        height: 100%;
+        background-color: #333333;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* DIY图形和样式 */
+    .nav-tab .main-nav .all-com .line-box { width: 30px; padding: 0 4px 0 34px;}
+
+    /* 设置图形样式 */
+    .line { display: flex; }
+
+    /* DIY图形圆点样式 */
+    .line-radius {
+        height: 5px;
+        width: 5px;
+        background: #ccc;
+        border-radius: 50%;
+    }
+
+    /* DIY图形直线 */
+    .main-line {
+        width: 15px;
+        margin-top: 1px;
+        margin-left: 3px;
+        border-top: 3px solid #ccc;
+    }
+
+    /* DIY线条上下间距 */
+    .line-spacing { margin: 3px 0; }
+
+    /* 全部商品分类文字样式 */
+    .nav-tab .main-nav .all-com h2 {
+        margin: 0;
+        color: #fff;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    /* 标题选项卡父级盒子 */
+    .nav-tab .title-tab {
+        width: 990px;
+        height: 100%;
+        display: flex;
+    }
+
+    /* 标题选项卡子级样式 */
+    .title-tab .tab { display: flex; }
+
+    /* 标题选项卡子级样式 */
+    .title-tab .tab h3 {
+        margin: 0;
+        padding: 10px 25px 0 ;
+        color: #fff;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+     /* 标题子级hover 效果 */
+     .nav-tab .title-tab h3:hover {
+        background: #fc3e3e;
+    }
+
+    /* 标题子级 */
+    .nav-tab .title-tab h2 {
+        margin: 0;
+        padding: 10px 30px;
+        color: #fff;
+        font-weight: normal;
+        font-size: 18px;
+    }
+
+    /* 标题子级hover 效果 */
+    .nav-tab .title-tab h2:hover {
+        background: #fc3e3e;
+    }
+
+    /*  以上是导航选项卡 
+        =============================================================================================================== */
+
+    /* 初始化banner父级样式 */
+    .mod-container .banner-box {
+        width: 100%;
+        height: 448px;
+        background: #05061a;
+    }
+
+    /* 初始化banner子级样式 */
+    .mod-container .banner-box .main-box {
+        height: 100%;
+        margin: 0 320px 0 360px;
+        display: flex;
+    }
+
+    /* 初始化banner左边的菜单栏盒模型 */
+    .mod-container .banner-box .main-box .banner-l {
+        height: 100%;
+        width: 200px;
+        background: #e6e7e9;
+    }
+
+    /* banner-l左边的菜单栏父级盒子样式 */
+    .banner-box .main-box .banner-l .box-parent { 
+        margin: 0 62px 0 38px; 
+        height: 50px;
+        display: flex;
+    } 
+
+    /* 清除左边的菜单栏ul样式 */
+    .main-box .banner-l .box-style {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    /* li左边的菜单栏偶数元素背景样式 */
+    .main-box .banner-l .box-style li:nth-child(even) { background: #d7d7d9; }
+
+    .banner-box .main-box .banner-l .box-parent .img {
+        height: 100%;
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+     /* 左边的菜单栏ul下的li样式 */
+     .main-box .banner-l .box-style li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 初始化左边的菜单栏文本盒模型 */
+    .banner-l .box-style .text {
+        width: 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* 初始化左边的菜单栏子级模型文字  */
+    .banner-l .box-style .text .menu-title {
+        color: #333333;
+        font-size: 16px;
+    }
+    
+    /*  以上是banner的左侧树形选项卡
+        =========================================================================================================== */
+
+    /* banner主图父级盒模型 */
+    .banner-box #banner {
+        width: 800px;
+        height: 100%;   
+        position: relative;
+    }
+
+    /* banner主图子级盒模型 */
+    .banner-box #banner .main-banner {
+        width: 800px;
+        height: 448px;   
+        position: relative;
+    }
+    
+    /* banner图和尺寸-1 */
+    .banner-box #banner .main-banner .wrap {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 800px;
+        height: 448px; 
+        position: relative;
+    }
+
+    /* banner父级盒模型 */
+    .banner-box #banner .main-banner .wrap #pic1 .Picture {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+    }
+
+    /* banner子级盒模型 */
+    .banner-box #banner .main-banner .wrap #pic1 .Picture #photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    @keyframes pre {
+        from {
+            transform: translateX(0%)
+        }
+        to {
+            transform: translateX(100%)
+        }
+    }
+
+    /* 左箭头切换样式 */
+    .banner-box #banner .left {
+        list-style: none;
+        border: 0 none;
+        font-size: 25px;
+        background-color: rgba(204, 204, 204, .3); 
+        position: absolute;
+        top: 210px;
+        outline: none;
+        z-index: 99;
+    }
+
+    /* 左箭头悬浮样式 */
+    .banner-box #banner .left:hover { color: #fff; }
+    
+    /* 右箭头切换样式 */
+    .banner-box #banner .right {
+        list-style: none;
+        border: 0 none;
+        font-size: 25px;
+        background-color: rgba(204, 204, 204, .3); 
+        position: absolute;
+        left: 770px;
+        top: 210px;
+        z-index: 99;
+    }
+
+    /* 右箭头悬浮样式 */
+    .banner-box #banner .right:hover { color: #fff; }
+
+    /* 圆点切换banner父级盒模型 */
+    .banner-box #banner .carousel-indicators {
+        padding: 0;
+        margin: 0 372px;
+        list-style: none;
+        width: 56px;
+        height: 8px;
+        display: flex;
+        position: absolute;
+        top: 413px;
+        z-index: 999;
+    }
+
+    /* 圆点切换左右元素margin */
+    .banner-box #banner .carousel-indicators .demo:nth-child(even) { margin: 0 4px; }
+
+    /* 圆点切换样式 */
+    .banner-box #banner  .carousel-indicators .demo {
+        width: 8px;
+        height: 8px;
+        background: rgba(255, 255, 255, .3);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    /* 圆点点击时的样式 */
+    .banner-box #banner .carousel-indicators .demo:active {
+        background: #fff;
+    }
+
+    /*  以上是主图banner部分
+        =========================================================================================================== */
+
+    /* banner右侧phone-LOGO父级盒模型 */
+    .banner-box .banner-r {
+        width: 200px;
+        height: 100%;
+    }
+
+    /* banner右侧phone-LOGO样式1 */    
+    .banner-box .banner-r img { opacity: .7; }
+    .banner-box .banner-r .TP-style { margin-top: 23px; }
+
+    /*  以上是banner主图右侧的phoneLOGO部分 
+        ============================================================================================================ */
+    
+    /* 右侧导航父级盒模型 */
+    .banner-box .banner-nav {
+        width: 40px;
+        height: 404px;
+        margin: 23px 0;
+        position: fixed;
+        left: 82%;
+        top: 438px;
+    }
+
+    /* 右侧导航子级盒模型 */
+    .banner-box .banner-nav .nav-box {
+        height: 166px;
+        width: 100%;
+    }
+
+    /* 统一导航父级盒模型样式 */
+    .banner-box .banner-nav .nav-box .items {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 设置导航背景和边框样式 */
+    .banner-box .banner-nav .nav-box .items:nth-child(1) {
+        background: #b4b5bb;
+        border: 1px solid #919197;
+    }
+
+    /* 设置导航背景和边框样式 */
+    .banner-box .banner-nav .nav-box .items:nth-child(2) {
+        background: #b4b5bb;
+        border-left: 1px solid #919197;
+        border-right: 1px solid #919197;
+        border-bottom: 1px solid #919197;
+    }
+
+    /* 设置导航背景和边框样式 */
+    .banner-box .banner-nav .nav-box .items:nth-child(3) {
+        background: #b4b5bb;
+        border-left: 1px solid #919197;
+        border-right: 1px solid #919197;
+        border-bottom: 1px solid #919197;
+    }
+
+    /* 设置导航背景和边框样式 */
+    .banner-box .banner-nav .nav-box .items:nth-child(4) {
+        background: #b4b5bb;
+        border-left: 1px solid #919197;
+        border-right: 1px solid #919197;
+        border-bottom: 1px solid #919197;
+    }
+
+    /* banner下LOGO的父级盒模型 */
+    .mod-container .banner-logo {
+        width: 100%;
+        height: 180px;
+        background: #eee;
+    }
+
+    /* banner 下LOGO子级盒模型 */
+    .mod-container .banner-logo .logo-bg {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        background: #eee;
+        display: flex;
+    }
+
+    /* 统一LOGO父级盒模型 */
+    .mod-container .banner-logo .logo-bg .logo {
+        width: 395px;
+        height: 150px;
+        margin-top: 10px;
+    }
+   
+    /* 统一LOGO下文本的父级盒模型 */
+    .mod-container .banner-logo .logo-bg .logo .logo-text {
+        padding: 0;
+        margin: 0;
+        padding: 35px 0 0 39px;
+        list-style: none;
+        width: 197px;
+        height: 86px;
+    }
+
+    /* 去除LOGO文本margin 统一主标题样式 */
+    .banner-logo .logo-bg .logo .logo-text h3 { 
+        margin: 0;
+        color: #eee;
+        font-size: 18px;        }
+
+    /* 去除LOGO文本margin 统一次标题样式 */
+    .banner-logo .logo-bg .logo .logo-text h4 {
+        margin: 0;
+        margin-top: 10px;
+        color: #eee;
+        font-size: 17px;
+        opacity: 0.7;
+        font-weight: normal;
+    }
+
+
+    /* 去除LOGO文本margin 统一价格标题样式 */
+    .banner-logo .logo-bg .logo .logo-text h5 {
+        margin: 0;
+        margin-top: 27px;
+        color: #ff2e2e;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+    /* LOGO-1图和样式 */
+    .mod-container .banner-logo .logo-bg .logo-1 {
+        background: #ffcc6e;
+        background-image: url("../image/faceMask.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 239px;
+    }
+
+    /* LOGO-2图和样式 */
+    .mod-container .banner-logo .logo-bg .logo-2 {
+        background: #ff9381;
+        margin: 0 8px;
+        margin-top: 10px;
+        background-image: url("../image/Perfume.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 254px;
+    }
+
+    /* LOGO-3图和样式 */
+    .mod-container .banner-logo .logo-bg .logo-3 {
+        background: #84a1ff;
+        background-image: url("../image/height_shoes.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 209px;
+    }
+
+    /*  以上是banner下的LOGO导航图内容
+        ============================================================================================================= */
+
+    /* 第一个商品主页面父级盒模型 */
+    .mod-container .commodity {
+        width: 100%;
+        height: 540px;
+        background: #eee;
+    }
+
+    /* 第一个商品主页面子级盒模型 */
+    .mod-container .commodity .commodity-box {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        background: #eee;
+    }
+
+    /* 头部标题样式 */
+    .commodity-box header { display: flex; }
+
+    /*  以上是第一个商品主页面父子级盒模型样式
+        ============================================================================================================== */
+
+    /* 导航选项卡父级盒模型 */
+    .mod-container .commodity .commodity-box .head-l {
+        width: 960px;
+        height: 58px;
+        background: #fff;
+        border-bottom: 2px solid #ffc66e;
+        position: relative;
+        display: flex;
+    }
+
+    /* 导航选项卡主标题父级盒模型 */
+    .commodity .commodity-box .head-l .main-title {
+        height: 100%;
+        width: 240px;
+        display: flex;
+    }
+
+    /* 图片样式 */
+    .commodity .commodity-box .head-l .main-title img {
+        width: 22px;
+        height: 22px;
+        padding: 18px 20px;
+    }
+
+    /* 文本样式 */
+    .commodity .commodity-box .head-l .main-title a .main {
+        margin: 18px 0;
+        font-size: 20px;
+        color: #333333;
+    }
+
+    /* 副主题样式 */
+    .commodity .commodity-box .Vice { display: flex; }
+
+    /* 次主标题多项选项卡 */
+    .commodity .commodity-box .head-l .title-style {
+        margin: 0;
+        color: #333;
+        font-size: 15px;
+        font-weight: normal;    
+        padding: 26px 15px 15px;
+    }
+
+    /* 更多标题样式 */
+    .commodity .commodity-box .head-l .more {
+        margin: 0;
+        color: #333;
+        font-size: 15px;
+        position: absolute;
+        right: 0;
+        font-weight: normal;    
+        padding: 26px 15px 15px;
+    }
+
+    /* 次主标题多项选项卡悬浮效果 */
+    .commodity .commodity-box .head-l .title-style:hover {
+        color: #fff;
+        background: #ffc663;
+    }
+    
+    /* 右侧导航标题父级盒模型样式 */
+    .commodity .commodity-box .head-r {
+        width: 238px;
+        height: 58px;
+        background: #fff;
+        border-bottom: 2px solid #eee;
+        border-left: 2px solid #eee;
+    } 
+
+    /* 标题样式 */
+    .commodity .commodity-box .head-r h3 {
+        margin-left: 17px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #333333;
+    }
+
+    /*  以上是头部标题导航选项卡部分
+        ============================================================================================================== */
+    
+    /* 第一个商品可视区域的父级盒模型 */
+    .commodity-box .body {
+        width: 960px;
+        height: 480px;
+        display: flex;
+    }
+
+    /* 商品可视区域左侧LOGO父级盒模型 */
+    .commodity-box .body .body-l {
+        width: 240px;
+        height: 100%;
+        background: #fff;
+        position: relative;
+    }
+
+    /* 商品视图去左侧底部图样式 */
+    .commodity-box .body .body-l a:nth-child(2) img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    /*  以上是左侧视图内容 
+        ============================================================================================================= */
+
+     /* 商品可视区域中间LOGO父级盒模型     */
+    .commodity-box .body .body-main {
+        width: 720px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+     }
+
+    /* TOP-LOGO图父级样式 */
+    .commodity-box .body .body-main .body-style {
+        width: 100%;
+        height: 239px;
+        border-bottom: 1px solid #eee;
+        background-color: #ffffff;      
+        display: flex;  
+    }
+
+    /* TOP-LOGO商品图父级样式 */
+    .commodity-box .body .body-main .body-style .logo-style {
+        width: 239px;
+        height: 240px;
+        border-right: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .body .body-main .body-style .logo-style .img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .body .body-main .body-style .logo-style .img .img-BG {
+        height: 100%;
+        width: 170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .body .body-main .body-style .logo-style .logo-text h3 {
+        color: #333;
+        margin: 0;
+        font-weight: normal;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* 商品图-1详细标题样式悬浮效果 */
+    .body .body-main .body-style .logo-style .logo-text a h3:hover {
+        color: #ff2e2e;
+    }
+
+    /* 商品图-1详细价格样式 */
+    .body .body-main .body-style .logo-style .logo-text h4 {
+        color: #333;
+        margin: 0;
+        color: #ff2e2e;
+        font-size: 16px;
+        font-weight: normal;
+        text-align: center;
+    }
+
+    /*  以上是主商品图LOGO、标题、样式
+        ============================================================================================================= */
+
+    /* 右侧导航父级盒模型 */
+    .body .body-r {
+        width: 238px;
+        height: 100%;
+        border-left: 2px solid #eee;
+        background: #fff;   
+        
+    }
+
+    /* 右侧导航头部商品父级盒模型 */
+    .body .body-r .head-TV {
+        height: 101px;
+        width: 100%;
+    }
+
+    /* 右侧导航头部商品子级盒模型 */
+    .body .body-r .head-TV .TV {
+        width: 218px;
+        height: 92px;
+        margin: 0 auto;
+        position: relative;
+        top: 8px;
+        display: flex;
+        border-bottom: 1px solid #eee;
+    }
+    
+    /* 右侧导航序号样式 */
+    .body .body-r .head-TV .TV .num {
+        width: 16px;
+        height: 100%;
+    }
+
+    /* 右侧导航序号样式 */
+    .body .body-r .head-TV .TV .num .num-style {
+        width: 16px;
+	    height: 16px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        background: #ff2e2e;  
+        border-radius: 50%;
+        position: relative;
+        top: 36px;
+    }
+
+
+    /* 右侧导航LOGO样式 */
+    .body .body-r .head-TV .TV a img {
+        width: 84px;
+        height: 91px;
+        margin: 0 8px;
+    }
+
+    /* 右侧导航标题样式 */
+    .body .body-r .head-TV .TV h3 {
+        color: #333333;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 20px;
+    }
+
+    /* 右侧导航标题悬浮样式 */
+    .body .body-r .head-TV .TV h3:hover { color: #ff2e2e; }
+
+    /* 右侧导航价格样式 */
+    .body .body-r .head-TV .TV h4 {
+        color: #ff2e2e;
+        font-size: 16px;
+        font-weight: normal;
+        margin: 0;
+    }
+
+    /*  以上是第一个商品的样式、LOGO、标题.... 
+        ===================================================================================================================================== */
+    
+    /* TV下的商品标题,排序,价格样式 */
+    .body-r .head-com { 
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 统一剩余商品的父级盒模型 */
+    .body-r .com-many {
+        height: 77px;
+        width: 100%;
+    }
+
+    /* 最后一个商品的父级盒模型 */
+    .body-r .com-end {
+        height: 71px;
+        width: 100%;
+    }
+
+    /* 统一剩余商品的子级盒模型 */
+     .body-r .many {
+        height: 56px;
+        width: 218px;
+        margin: 0 auto;
+        margin-top: 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* end商品的子级盒模型 */
+    .body-r .many-end {
+        height: 51px;
+        width: 218px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    /* 统一剩余商品的头部父级盒模型样式 */
+    .body-r .many .head-title {
+        height: 12px;
+        width: 100%;
+        display: flex;
+    }
+
+    /*end商品的头部父级盒模型样式 */
+    .body-r .many-end .head-title {
+        height: 12px;
+        width: 100%;
+        display: flex;
+    }
+
+    /* 统一数字序号样式 */
+    .body-r .many .head-title .com-style{
+        width: 16px;
+	    height: 16px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        background: #666;
+        text-align: center;  
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    /* 统一数字序号样式 */
+    .body-r .many-end .head-title .com-style{
+        width: 16px;
+	    height: 16px;
+        color: #fff;
+        font-size: 12px;
+        line-height: 14px;
+        background: #666;
+        text-align: center;  
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    /* 统一标商品题样式 */
+    .body-r .many .head-title .com-title {
+        margin: 0;
+        font-size: 12px;
+        font-weight: normal;
+        color: #333;
+    }
+
+    /* end商品题样式 */
+    .body-r .many-end .head-title .com-title {
+        margin: 0;
+        font-size: 12px;
+        font-weight: normal;
+        color: #333;
+    }
+
+    /* 统一标商品题悬浮样式 */
+    .body-r .many .head-title .com-title:hover { color: #ff2e2e; }
+
+    /* 统一标商品题悬浮样式 */
+    .body-r .many-end .head-title .com-title:hover { color: #ff2e2e; }
+
+    /* 价格样式 */
+    .body-r .many .com-much {
+        margin: 0;
+        color: #ff2e2e;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        top: 9px;
+        left: 26px;
+    }
+
+    /* end价格样式 */
+    .body-r .many-end .com-much {
+        margin: 0;
+        color: #ff2e2e;
+        font-size: 16px;
+        font-weight: normal;
+        position: relative;
+        top: 9px;
+        left: 26px;
+    }
+
+    /* 修改不同序号背景色 */
+    .body-r .many .head-title .BG { background: #aaa }
+
+    /* 修改end序号背景色 */
+    .body-r .many-end .head-title .BG { background: #aaa }
+
+    /*  以上是右侧导航TV底部的商品名称价格样式内同
+        =============================================================================================================== */
+
+    /* 主图区域中间LOGO父级盒模型 */
+    .mod-container .banner-sm {
+        width: 100%;
+        height: 146px;
+        background: #eee;
+    }
+
+    /* 主图区域中间LOGO子级盒模型 */
+    .mod-container .banner-sm ._banner-style {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    /* 主图区域中间LOGO-img样式 */
+    .mod-container .banner-sm ._banner-style img { margin-top: 20px; }
+
+    /*  以上是主图区域中间LOGO 
+        ============================================================================================================== */
+
+    /* 这里是页脚和主体的分割线 */
+    .mod-container .Partition-line {
+        width: 100%;
+        height: 20px;
+        background: #eee;
+    }
+    
+    /* 页脚主标题父级盒模型 */
+    .mod-container .foot-box {
+        width: 100%;
+        height: 99px;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* 页脚主标题子级盒模型 */
+    .mod-container .foot-box .foot-title {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    /* 页脚主标题内容父级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style {
+        width: 300px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        cursor: default;
+    }
+
+    /* 页脚主标题内容父级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .title-1 {
+         width: 100%;
+         height: 74px;
+         display: flex;
+         align-items: center;
+    }
+
+    /* 页脚主标题内容父级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .title-2 {
+        width: 298px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+   }
+
+    /* 页脚主标题内容父级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .title-3 {
+        width: 299px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #ccc;
+    }
+
+    /* 页脚主标题内容父级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .title-4 {
+        width: 300px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* 页脚主标题内容子级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .foot-1 {
+        width: 100%;
+        height: 74px;
+   }
+
+    /* 页脚主标题内容子级背景图 */
+    .mod-container .foot-box .foot-title .foot-style .image-1 {
+        background-image: url("../image/day7.png");
+        width: 40px;
+        height: 40px;
+        margin-left: 40px;
+    }
+
+    /* 页脚主标题内容子级标题 */
+    .mod-container .foot-box .foot-title .foot-style .title-1 h3 {
+        margin: 0;
+        color: #333;
+        margin-left: 17px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    /* 页脚主标题内容子级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .foot-2 {
+        width: 100%;
+        height: 74px;
+    }
+
+    /* 页脚主标题内容子级背景图 */
+    .mod-container .foot-box .foot-title .foot-style .image-2 {
+        background-image: url("../image/day15.png");
+        width: 40px;
+        height: 40px;
+        margin-left: 40px;
+    }
+
+    /* 页脚主标题内容子级标题 */
+    .mod-container .foot-box .foot-title .foot-style .title-2 h3 {
+        margin: 0;
+        color: #333;
+        margin-left: 17px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    /* 页脚主标题内容子级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .foot-3 {
+        width: 100%;
+        height: 74px;
+    }
+
+    /* 页脚主标题内容子级背景图 */
+    .mod-container .foot-box .foot-title .foot-style .image-3 {
+       background-image: url("../image/quality_Goods.png");
+       width: 40px;
+       height: 40px;
+       margin-left: 40px;
+    }
+
+    /* 页脚主标题内容子级标题 */
+    .mod-container .foot-box .foot-title .foot-style .title-3 h3 {
+        margin: 0;
+        color: #333;
+        margin-left: 17px;
+        font-size: 20px;
+        font-weight: normal;
+    }
+
+    /* 页脚主标题内容子级盒模型 */
+    .mod-container .foot-box .foot-title .foot-style .foot-4 {
+        width: 100%;
+        height: 74px;
+    }
+
+    /* 页脚主标题内容子级背景图 */
+    .mod-container .foot-box .foot-title .foot-style .image-4 {
+        background-image: url("../image/post_Sale.png");
+        width: 40px;
+        height: 40px;
+        margin-left: 40px;
+    }
+
+    /* 页脚主标题内容子级标题 */
+    .mod-container .foot-box .foot-title .foot-style .title-4 h3 {
+        margin: 0;
+        color: #333;
+        margin-left: 17px;
+        font-size: 20px;
+        font-weight: normal;    
+    }
+
+    /*  以上是页脚主标题 
+        ============================================================================================================= */
+
+    /* 页脚主内容父级盒模型 */
+    .mod-container .foot-body {
+        height: 240px;
+        width: 100%;
+        background: #fff;
+    }
+
+    /* 页脚主内容子级盒模型 */
+    .mod-container .foot-body .body-box {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    /* 页脚主内容左父级盒模型 */
+    .mod-container .foot-body .body-box ._body-l {
+        width: 940px;
+        height: 100%;
+    }
+
+    /* 页脚主内容左子级盒模型 */
+    .mod-container .foot-body .body-box ._body-l ._body {
+        width: 100%;
+        height: 210px;
+        display: flex;
+    }
+
+    /* 页脚主内容父级盒模型 */
+    .mod-container .foot-body .body-box ._body-l ._body .text-box {
+        width: 85px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+    }
+
+    /* 统一页脚著内容标题样式 */
+    .foot-body .body-box ._body-l ._body .text-box h3 {
+        margin: 0;
+        margin: 30px 0 18px 0;
+        color: #333;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    /* 统一页脚著内容明细样式 */
+    .foot-body .body-box ._body-l ._body .text-box .text-style {
+        color: #666;
+        font-size: 14px;
+        display: inline-block;  
+    }
+
+    /* 统一页脚著内容明细悬浮样式 */
+    .foot-body .body-box ._body-l ._body .text-box .text-style:hover { color: #ff2e2e; }
+
+    /* 统一页脚著内容明细间距样式 */
+    .foot-body .body-box ._body-l ._body .text-box ._style {
+        margin: 10px 0;
+    }
+
+    /* 页脚主内容指定父级盒模型左右间距 */
+    .foot-body .body-box ._body-l ._body .text-box:nth-child(2) { margin: 0 103px; }
+    .foot-body .body-box ._body-l ._body .text-box:nth-child(4) { margin: 0 115px; }
+
+    /* 页脚著内容底部父级盒模型 */
+    .foot-body .body-box ._body-l ._foot {
+        width: 100%;
+        height: 29px;
+    }
+
+    /* 页脚主内容链接样式 */
+    .foot-body .body-box ._body-l .going {
+        color: #333;
+        margin-right: 25px; 
+        cursor: default;
+    }
+
+    /* 页脚主内容 京东:链接样式 */
+    .foot-body .body-box ._body-l .jd {
+        color: #666;
+        margin-right: 70px;
+    }
+
+    /* 页脚主内容 京东:链接悬浮样式 */
+    .foot-body .body-box ._body-l .jd:hover { color: #ff2e2e; }
+
+    /* 页脚主内容 天猫:链接样式 */
+    .foot-body .body-box ._body-l .tm { color: #666; }
+
+    /* 页脚主内容 天猫:链接悬浮样式 */
+    .foot-body .body-box ._body-l .tm:hover { color: #ff2e2e; }
+
+    /*  以上是页脚左主内容区域 
+        ============================================================================================================== */
+
+    /* 页脚主内容右边父级盒模型 */
+    .mod-container .foot-body .body-box ._body-r {
+        width: 260px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        cursor: default;
+    }
+
+    /* 页脚主内容右边内容上父级盒模型 */
+    .mod-container .foot-body .body-box ._body-r ._r-top {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 页脚主内容右边内容标题样式 */
+    .mod-container .foot-body .body-box ._body-r ._r-top h3 {
+        margin: 0;
+        margin-top: 30px;
+        color: #333;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    /* 页脚主内容右边内容号码样式 */
+    .mod-container .foot-body .body-box ._body-r ._r-top h4 {
+        margin: 0;
+        margin-top: 9px;
+        color: #fc3e3e;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    /* 页脚主内容右边内容服务时间样式 */
+    .mod-container .foot-body .body-box ._body-r ._r-top .time { margin: 19px 0 10px 0; }
+
+    /* 页脚主内容右边内容服务时间样式 */
+    .mod-container .foot-body .body-box ._body-r ._r-top h6 {
+        margin: 0;
+        color: #666;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    /* 页脚主内容右边内容下父级盒模型 */
+    .mod-container .foot-body .body-box ._body-r ._r-down {
+        width: 100%;
+        height: 88px;
+        display: flex;
+    }
+
+    /* 页脚主内容右边内容下code盒模型 */
+    .mod-container .foot-body .body-box ._body-r ._r-down ._img-1 {
+        width: 88px;
+        height: 88px;
+        margin-right: 30px;
+    }
+
+    /* 页脚主内容右边内容下code盒模型 */
+    .mod-container .foot-body .body-box ._body-r ._r-down ._img-2 {
+        width: 88px;
+        height: 88px;
+    }
+ 
+    /*  以上是页脚主内容内容
+        =============================================================================================================== */
+
+    /* 页脚父级盒模型 */
+    .mod-container .footer-box {
+        width: 100%;
+        height: 93px;
+    }
+
+    /* 页脚 top 盒模型 */
+    .mod-container .footer-box .footer-top {
+        width: 100%;
+        height: 57px;
+        background: #666;
+    }
+
+    /* 页脚 _top 盒模型 */
+    .mod-container .footer-box .footer-top ._top {
+        width: 600px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* 去除ul样式 */
+    .mod-container .footer-box .footer-top ._top ._ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* li 统一文本样式 */
+    .mod-container .footer-box .footer-top ._top ._ul ._li {
+        color: #fefefe;
+        font-size: 12px;
+    }
+
+    /* li 统一文本悬浮样式 */
+    .mod-container .footer-box .footer-top ._top ._ul ._li:hover { color: #fc3e3e }
+
+    /* 导航之间间距和分割线 */
+    .mod-container .footer-box .footer-top ._top ._ul ._line {
+        height: 9px;
+        border-left: 1px solid #999; 
+        margin: 0 15px;
+    }
+
+    /* li 版权文本样式 */
+    .mod-container .footer-box .footer-top ._top .copyright {
+        color: #fefefe;
+        font-size: 12px;
+        margin-top: 10px;
+        cursor: default;
+    }
+
+    /*  以上是页脚导航内容 
+        =============================================================================================================== */
+
+    /* 页脚 down 盒模型 */
+    .mod-container .footer-box .footer-down {
+        width: 100%;
+        height: 36px;
+        background: #333;   
+    }
+
+    /* 页脚 _down 盒模型 */
+    .mod-container .footer-box .footer-down ._down {
+        width: 700px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    /* 页脚 _end 盒模型 */
+    .mod-container .footer-box .footer-down ._down ._end {
+        width: 87px;
+        height: 22px;
+        position: relative;
+        top: 8px;
+        display: flex;
+    }
+
+    /* 页脚logo-1 */
+    .mod-container .footer-box .footer-down ._down ._end .image-1 {
+        width: 21px;
+        height: 23px;
+        background-image: url("../image/footer_1.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    /* 页脚logo-2 */
+    .mod-container .footer-box .footer-down ._down ._end .image-2 {
+        width: 21px;
+	    height: 22px;
+        background-image: url("../image/footer_2.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    /* 页脚logo-3 */
+    .mod-container .footer-box .footer-down ._down ._end .image-3 {
+        width: 21px;
+	    height: 22px;
+        background-image: url("../image/footer_3.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    /* 页脚logo-4 */
+    .mod-container .footer-box .footer-down ._down ._end .image-4 {
+        width: 21px;
+	    height: 22px;
+        background-image: url("../image/footer_4.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    /* 页脚logo-5 */
+    .mod-container .footer-box .footer-down ._down ._end .image-5 {
+        width: 21px;
+	    height: 22px;
+        background-image: url("../image/footer_5.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    /* 页脚logo左右间距 */
+    .mod-container .footer-box .footer-down ._down ._end-style { margin: 0 35px 0 58px; }
+
+    /* 统一页脚样式 */
+    .mod-container .footer-box .footer-down ._down ._end a { display: flex;  } 
+
+    /* 页脚下的文本样式 */
+    .mod-container .footer-box .footer-down ._down ._end h6 {
+        margin: 0;
+        font-size: 11px;
+        font-weight: normal;
+        color: #fefefe;
+        position: relative;
+        left: 9px;
+    }
+
+    /* 文本位置 */
+    ._h6 {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    /*  以上就是页脚的内容
+        =================================================================================================================================== */

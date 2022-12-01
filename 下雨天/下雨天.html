@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下雨天</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            list-style: none;   
+            position: relative;
+            background: url("background.jpg") no-repeat;
+            height: 100vh;
+            background-size: 100% 100%;
+            overflow: hidden;
+        }
+        .rain {
+            width: 3px;
+            position: absolute;
+            left: 100px;
+            animation: rainDown 1.5s linear infinite;
+            background-image: linear-gradient(rgba(255, 255, 255, .1), #7f7522);
+            /* 
+                鸨色 #f7acbc
+                赤白橡 #deab8a
+                油色 #817936
+                绀桔梗 #444693
+                踯躅色 #ef5b9c
+                肌色 #fedcbd
+                伽罗色 #7f7522
+            */
+        }
+
+        @keyframes rainDown {
+            0%{
+                height: 0;
+                transform: translate(0, 0);
+            }
+            50%{
+                height: 200px;
+                transform: translate(0,300px);
+            }
+            100%{
+                height: 0;
+                transform: translate(0, 800px);
+            }
+        }
+
+        .rain:nth-child(2){
+            left: 200px;
+            top: -300px;
+        }
+        .rain:nth-child(3){
+            left: 300px;
+            top: 300px;
+        }
+        .rain:nth-child(4){
+            left: 400px;
+            top: -200px;
+        }
+        .rain:nth-child(5){
+            left: 500px;
+            top: 200px;
+        }
+        .rain:nth-child(6){
+            left: 600px;
+            top: -100px;
+        }
+        .rain:nth-child(7){
+            left: 700px;
+            top: 100px;
+        }
+        .rain:nth-child(8){
+            left: 800px;
+            top: -400px;
+        }
+        .rain:nth-child(9){
+            left: 900px;
+            top: 400px;
+        }
+        .rain:nth-child(10){
+            left: 1000px;
+            top: -300px;
+        }
+        .rain:nth-child(11){
+            left: 1100px;
+            top: 300px;
+        }
+        .rain:nth-child(12){
+            left: 1200px;
+            top: -200px;
+        }
+        .rain:nth-child(13){
+            left: 1300px;
+            top: 200px;
+        }
+        .rain:nth-child(14){
+            left: 1400px;
+            top: -100px;
+        }
+        .rain:nth-child(15){
+            left: 1500px;
+            top: 100px;
+        }
+        .rain:nth-child(16){
+            left: 1600px;
+            top: -300px;
+        }
+        .rain:nth-child(17){
+            left: 1700px;
+            top: 300px;
+        }
+        .rain:nth-child(18){
+            left: 1800px;
+            top: -200px;
+        }
+    </style>
+</head>
+<body>
+    <audio class="audioTab" src="./Kurt Hugo Schneider,MADILYN,Mario Jose - Attention.mp3"></audio>
+    <script>
+        for(let i = 1; i < 19; i++) {
+            document.write("<li class='rain'></li>");
+        }
+        window.onclick = function() {
+            let audio = document.querySelector(".audioTab");
+            audio.play();
+        }
+    </script>
+</body>
+</html>

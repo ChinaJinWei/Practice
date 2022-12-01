@@ -1,0 +1,251 @@
+    body {
+        margin: 0;
+        background-color: #e0e0e0;
+        /* font-size: 18px;
+        font-family: 微软雅黑; */
+    }
+
+    #main{
+        width:1200px;
+        height: 1100px;
+        MARGIN-RIGHT: auto;
+        MARGIN-LEFT: auto;
+    }
+    
+    a:link,
+    a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .clear-both::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .h-1 {
+        height: 220px;
+    }
+
+    .h-2 {
+        height: 250px;
+    }
+
+    .h-3 {
+        height: 280px;
+    }
+
+    /* main 开始 */
+
+    main {
+        width: 1200px;
+        background-color: #77674a;
+        padding: 24px;
+        margin: 30px auto;
+        border-radius: 10px;
+    }
+
+    main .box {
+        background-color: #fff;
+        margin: auto;
+        padding: 10px;
+    }
+
+    main .box .section-l,
+    main .box .section-c,
+    main .box .section-r {
+        float: left;
+        width: 392px;
+    }
+
+    main .box section .img {
+        width: inherit;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    
+    main .box section .dogImg-1 {
+        background-image: url("../img/dog-1.jfif");
+    }
+
+    main .box section .dogImg-2 {
+        background-image: url("../img/dog-2.jpg");
+    }
+
+    main .box section .dogImg-3 {
+        background-image: url("../img/dog-3.jpg");
+    }
+
+    main .box .section-l .tabBox {
+        padding-left: 15px;
+        background-color: #dad7c4;
+        overflow: hidden;
+    }
+
+    main .box .section-l .tabBox li {
+        height: 30px;
+        line-height: 30px;
+        margin: 5px 0;
+    }
+    
+    main .box .section-l .tabBox li span {
+        font-weight: bold;
+        padding-left: 10px;
+    }
+
+    main .box .section-l .selectBox {
+        padding-left: 15px;
+        font-weight: bold;
+        color: #4e4b41;
+        background-color: #b3b19e;
+        overflow: hidden;
+    }
+
+    main .box .section-l .selectBox label span {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    main .box .section-l .selectBox label {
+        display: block;
+        margin: 20px 0;
+    }
+
+    main .box .section-l .selectBox .submit {
+        width: 70px;
+        height: 30px;
+        color: #4e4b41;
+        font-size: 16px;
+        border: 1px solid #4e4b41;
+        margin: 0 0 20px 10px;
+    }
+
+    main .box .section-c .memberBox {
+        background-color: #49423f;
+        color: #fff;
+        overflow: hidden;
+        padding: 0 15px;
+        font-size: 0;
+    }
+
+    main .box .section-c .memberBox p {
+        font-size: 18px;
+    }
+
+    main .box .section-c .memberBox input:first-child {
+        float: left;
+    }
+
+    main .box .section-c .memberBox input:last-child {
+        float: right;
+    }
+
+    main .box .section-c .memberBox .enterBox {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    main .box .section-c .memberBox .enter-l {
+        float: left;
+    }
+
+    main .box .section-c .memberBox .enter-l a {
+        color: #d8cf29;
+        font-size: 13px;
+    }
+    
+    main .box .section-c .memberBox .enter-r {
+        float: right;
+    }
+
+    main .box .section-c .dogShowBox,
+    main .box .section-r .dogShowBox {
+        padding-left: 20px;
+        background-color: #dedccd;
+        overflow: hidden;
+    }
+
+    main .box .section-c .dogShowBox span,
+    main .box .section-r .dogShowBox span {
+        color: #454440;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    main .box .section-c .dogShowBox li {
+        padding-bottom: 20px;
+    }
+    
+    main .box .section-c .dogShowBox li .img-2 {
+        width: 146px;
+        border: 2px solid #858376;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    main .box .section-c .dogShowBox li .dogInfoBox { 
+        width: 212px;
+        padding-left: 10px;
+    }
+
+    main .box .section-c .dogShowBox li .img-2,
+    main .box .section-c .dogShowBox li .dogInfoBox {
+        height: 153px;
+        float: left;
+    }
+
+    main .box .section-c .dogShowBox li .dogImg-4 {
+        background-image: url("../img/dog-4.jfif");
+    }
+
+    main .box .section-c .dogShowBox li .dogImg-5 {
+        background-image: url("../img/dog-5.jpg");
+    }
+
+
+    main .box .section-c .dogShowBox li .dogImg-6 {
+        background-image: url("../img/dog-6.jpg");
+    }
+
+
+    main .box .section-c .dogShowBox li .dogInfoBox h4,
+    main .box .section-c .dogShowBox li .dogInfoBox p {
+        margin: 0;
+    }
+
+    main .box .section-c .dogShowBox li .dogInfoBox h4 {
+        color: #6272a9;
+        text-decoration: underline;
+    }
+
+    main .box .section-c .dogShowBox li .dogInfoBox p,
+    main .box .section-r .dogShowBox li .dogInfoBox p {
+        color: #858376;
+        font-size: 16px;
+    }
+
+    main .box .section-r-img {
+        height: 398px;
+        background: url("../img/dog-7.jfif") no-repeat;
+        background-size: 100% 100%;
+        background-color: red;
+    }
+
+    main .box .section-r .dogShowBox li .dogInfoBox h4 {
+        color: #5c5851;
+        text-decoration: underline;
+    }
+
+    main .box .section-r .dogShowBox {
+        height: 598px;
+        background-color: #cfcbb0;
+    }
+    
+    /* main 结束 */

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="CH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>疫情防控调查表</title>
+    <style>
+        /* 清楚默认样式，工作中不适用 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a:link,
+        a:visited {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #ebedf0;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .box {
+            width: 780px;
+            padding: 30px 70px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+
+        .box .container {
+            padding: 0 20px;
+        }
+
+        .box .container header {
+            border-bottom: 1px dashed #c2c2c2;
+        }
+
+        .box .container header h1 {
+            color: #1ea0fa;
+            font-size: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .box .container header p {
+            color: #666;
+            line-height: 60px;
+            margin-left: 16px;
+        }
+
+        .box .container form div {
+            margin-bottom: 15px;
+        }
+
+        .box .container form div label {
+            display: block;
+        }
+
+        .box .container form div label input[type="text"] {
+            width: 100%;
+            height: 32px;
+        }
+
+        .box .container form div p {
+            color: #333;
+            line-height: 26px;
+            line-height: 60px;
+        }
+
+        .box .container form div.day label,
+        .box .container form div.day label {
+            line-height: 30px;
+        }
+
+        .box .container form div.healthCode div.colorBox,
+        .box .container form div.healthVaccines div.colorBox {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 0px;
+        }
+
+        .box .container form div.healthCode input,
+        .box .container form div.healthVaccines input {
+            display: none;
+        }
+
+        .box .container form div.healthCode div.ico,
+        .box .container form div.healthVaccines div.ico {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            padding: 2px;
+            border: 1px solid #000;
+            margin-bottom: 0;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .box .container form div.healthCode div.ico i,
+        .box .container form div.healthVaccines div.ico i {
+            display: block;
+            height: inherit;
+        }
+
+        .box .container form div.healthCode div.green input:checked+div>i {
+            background-color: greenyellow;
+
+        }
+
+        .box .container form div.healthCode div.yellow input:checked+div>i {
+            background-color: goldenrod;
+        }
+
+        .box .container form div.healthCode div.red input:checked+div>i {
+            background-color: red;
+        }
+
+        .box .container form div.healthVaccines div:nth-child(2) input:checked+div>i {
+            background-color: greenyellow;
+        }
+
+        .box .container form div.healthVaccines div:nth-child(3) input:checked+div>i {
+            background-color: red;
+        }
+
+        .box .container form footer {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .box .container form footer button {
+            width: 150px;
+            height: 50px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+
+        .box .container form footer button[type="reset"] {
+            background-color: #ccc;
+            margin-right: 80px;
+        }
+
+        .box .container form footer button[type="submit"] {
+            color: #fff;
+            background-color: #1ea0fa;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="container">
+            <header>
+                <h1>疫情防控调查表</h1>
+                <p>根据新冠疫情防控要求，请务必如实填写，如有隐瞒，将承担法律责任！</p>
+            </header>
+            <form action="https://www.baidu.com">
+                <div>
+                    <label for="userName">
+                        <p>你的姓名</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div>
+                    <label for="userName">
+                        <p>身份证号</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div>
+                    <label for="userName">
+                        <p>手机号码</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div class="day">
+                    <p>14天内有国内中、高风险地区或其他有病例报告社区的旅行史或者居住史</p>
+                    <label for="day14Yes">
+                        <input type="radio" name="day14" id="day14Yes">
+                        <span>是</span>
+                    </label>
+                    <label for="day14No">
+                        <input type="radio" name="day14" id="day14No">
+                        <span>否</span>
+                    </label>
+                </div>
+                <div>
+                    <label for="userName">
+                        <p>请填写您的国内中、高风险地区或者其他有病例报告社区的旅行史或居住史</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div class="day">
+                    <p>4天内曾接触过来自国内中、高风险地区或来自有病例报告社区的发热或有呼吸道症状的患者</p>
+                    <label for="day4Yes">
+                        <input type="radio" name="day4" id="day4Yes">
+                        <span>是</span>
+                    </label>
+                    <label for="day4No">
+                        <input type="radio" name="day4" id="day4No">
+                        <span>否</span>
+                    </label>
+                </div>
+                <div>
+                    <label for="userName">
+                        <p>请填写您何时何地接触过新型冠状病毒感染者</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div class="day">
+                    <p>14天内有无发热、咽痛、咳嗽、腹泻、味觉嗅觉减退等相关症状</p>
+                    <label for="day14HotYes">
+                        <input type="radio" name="day4" id="day14HotYes">
+                        <span>是</span>
+                    </label>
+                    <label for="day14HotNo">
+                        <input type="radio" name="day4" id="day14HotNo">
+                        <span>否</span>
+                    </label>
+                </div>
+                <div class="day">
+                    <p>14天内有境外旅行史、居住史或与归国人员接触史</p>
+                    <label for="day14GoToYes">
+                        <input type="radio" name="day4" id="day14GoToYes">
+                        <span>是</span>
+                    </label>
+                    <label for="day14GoToNo">
+                        <input type="radio" name="day4" id="day14GoToNo">
+                        <span>否</span>
+                    </label>
+                </div>
+                <div>
+                    <label for="userName">
+                        <p>请填写您的境外旅行史、居住史或与归国人员的接触史</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div class="day">
+                    <p>是否进行48小时内核酸检测</p>
+                    <label for="48HoursGoToYes">
+                        <input type="radio" name="day4" id="48HoursGoToYes">
+                        <span>是</span>
+                    </label>
+                    <label for="48HoursGoToNo">
+                        <input type="radio" name="day4" id="48HoursGoToNo">
+                        <span>否</span>
+                    </label>
+                </div>
+                <div>
+                    <label for="userName">
+                        <p>核酸检测时间</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div>
+                    <label for="userName">
+                        <p>核酸检测结果（阴性/阳性）</p>
+                        <input type="text" id="userName">
+                    </label>
+                </div>
+                <div class="day healthCode">
+                    <p>健康码状态</p>
+                    <!-- healthCodeInfoGood 绿色
+                        healthCodeInfoBad 黄色
+                        healthCodeInfoTooBad 红色
+                    -->
+                    <div class="colorBox green">
+                        <label for="healthCodeInfoGood">绿色</label>
+                        <input type="radio" name="healthCode" value="green" id="healthCodeInfoGood" />
+                        <div class="ico">
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="colorBox yellow">
+                        <label for="healthCodeInfoBad">黄色</label>
+                        <input type="radio" name="healthCode" value="green" id="healthCodeInfoBad" />
+                        <div class="ico">
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="colorBox red">
+                        <label for="healthCodeInfoTooBad">红色</label>
+                        <input type="radio" name="healthCode" value="green" id="healthCodeInfoTooBad" />
+                        <div class="ico">
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="day healthVaccines">
+                    <p>是否接种过新型冠状病毒疫苗</p>
+                    <div class="colorBox vaccinatedBox">
+                        <label for="vaccinated">是</label>
+                        <input type="radio" name="healthVaccines" value="green" id="vaccinated" />
+                        <div class="ico">
+                            <i></i>
+                        </div>
+                    </div>
+                    <div class="colorBox vaccinatedBox">
+                        <label for="noVaccinated">否</label>
+                        <input type="radio" name="healthVaccines" value="green" id="noVaccinated" />
+                        <div class="ico">
+                            <i></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <p>我承诺，以上填报的资料真实准确，如有不实，本人愿意承担由此引起的一切后果及法律责任</p>
+                    <label for="agree">
+                        <input type="radio" name="finalConfirmation" id="agree">
+                        <span>同意</span>
+                    </label>
+                    <label for="disagree">
+                        <input type="radio" name="finalConfirmation" id="disagree">
+                        <span>不同意</span>
+                    </label>
+                </div>
+                <footer>
+                    <button type="reset">清空</button>
+                    <button type="submit">确认提交</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

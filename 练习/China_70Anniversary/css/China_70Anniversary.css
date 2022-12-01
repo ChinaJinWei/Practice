@@ -1,0 +1,114 @@
+    body,
+    a {
+        color: #fff;
+        font-size: 16px;
+        font-family: 微软雅黑;
+    }
+
+    body {
+        /* background-image: url("../images/guoqingjieicon1.png"); */
+    }
+
+    .clear-both::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+
+
+    /* header 开始 */
+
+    header {
+        height: 310px;
+        background: url("../images/guoqingjie背景.jpg") no-repeat;
+        background-size: 100% 100%;
+        padding-left: 144px;
+    }
+
+    header .headBox {
+        width: 1200px;
+    }
+
+    header .MainTitleBox,
+    header .headerInfoBox,.box {
+        float: left;
+        margin-top: 32px;
+    }
+
+    header .MainTitleBox {
+        width: 120px;
+        height: 210px;
+        background:url("../images/guoqingjie主体字.png") no-repeat;
+        background-size: contain;
+        margin-right: 78px;
+    }
+
+    header .headerInfoBox {
+        width: 550px;
+    }
+
+    header .headerInfoBox p {
+        margin: 0;
+    }
+
+    header .headerInfoBox p:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    header .headerInfoBox .endInfo {
+        margin: 5px 0 23px;
+    }
+
+    header .headerInfoBox .endInfo p {
+        float: left;
+    }
+    header .headerInfoBox .endInfo a {
+        float: right;
+    }
+
+    header .headerInfoBox ul li {
+        float: left;
+        width: 90px;
+        text-align: center;
+    }
+
+    header .headerInfoBox ul li:nth-child(2),
+    header .headerInfoBox ul li:nth-child(3) {
+        margin-left: 110px;
+    }
+
+
+    header .headerInfoBox ul li .img {
+        width: inherit;
+        height: 90px;
+        background-color: red;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 15px;
+    }
+
+    header .headerInfoBox ul li .img_1 {
+        background-image: url("../images/guoqingjieicon1.png");
+    }
+
+    header .headerInfoBox ul li .img_2 {
+        background-image: url("../images/guoqingjieicon2.png");
+    }
+
+    header .headerInfoBox ul li .img_3 {
+            background-image: url("../images/guoqingjieicon3.png");
+    }  
+    
+    .img:hover {
+        transform: rotate(45deg);
+    }
+
+    /* header 结束 */

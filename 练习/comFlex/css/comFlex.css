@@ -1,0 +1,77 @@
+    html,
+    body {
+        height: 100%;   /* 高度百分百 */
+    }
+
+    body,
+    p {
+        margin: 0; /* 清除外边距 */
+    }
+
+    a:link,
+    a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    body {
+        /* 文本属性会继承 */
+        color: #333;    /* 文字颜色 */
+        text-align: center; /* 文本居中 */
+        font-size: 17px;    /* 文字大小 */
+        font-family: "Microsoft YaHei", "SimSun", "Arial", "Consolas";  /* 文字类型 */
+        position: relative; /* 相对定位，让自己相对我来定位 */
+        background: url("../images/bodyBG.jpg") no-repeat center;   /*背景：图片路径 url("") 不重复 居中 */
+        background-size: 100% 100%; /* 背景图大小 X 100% Y 100%  */
+    }
+
+    ul {
+        margin: 0;  /* 清除外边距 */
+        padding: 0;  /* 清除内边距 */
+        list-style: none;   /* 清除列表样式 */
+    }
+
+    /* 类选择器 点类名 花括号
+        语法：  .className { 这里的是样式 }
+    */
+    .box {
+        width: 900px;   /* 宽度单词="宽度值px(单位像素) */
+        height: 200px;   /* 高度单词="高度值px(单位像素) */
+        position: absolute; /* 绝对定位，脱离文档流 四个方向值 top、right、bottom、left */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;   /* 实现水平垂直居中，上右下左自适应 */
+        display: flex;  /* 伸缩盒，弹性布局，弹性盒子 */
+        justify-content: space-between;
+    }
+
+    .box li {
+        width: 200px;
+        height: inherit;    /* 高度继承父级 inherit */
+        background-color: #fff;
+        transition: all .5S ease-in-out 0S;
+    }
+
+    .box li .items {
+        width: 150px;
+        height: 130px;
+        margin: 10px auto;
+        border-radius: 50%; /* 圆角半径 */
+        background-color: red;  /* 背景颜色：红色 */
+        background-size: 100% 100%;  /* 背景大小：X100% Y100% */
+        background-position: center;  /* 背景定位：剧中 */
+        background-repeat: no-repeat;  /* 背景重复：不重复 */
+    }
+
+    .box li .img-1 { background-image: url("../images/2015年待分类/1.jpg"); }
+    .box li .img-2 { background-image: url("../images/2015年待分类/2.jpg"); }
+    .box li .img-3 { background-image: url("../images/2015年待分类/3.jpg"); }
+    .box li .img-4 { background-image: url("../images/2015年待分类/4.jpg"); }
+
+    .box li:hover {
+        transform: scale(1.1, 1.1); /* 2D缩放 (X, Y) 数字 */
+        opacity: .8;
+        box-shadow: 0px 0px 10px 5px skyblue;
+    }
