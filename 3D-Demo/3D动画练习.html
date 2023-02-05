@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3D动画练习</title>
+<style>
+  /* transform3D 学习 */
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* 定义动画 */
+  @keyframes show {
+    0% {
+      transform: translateX(0px);
+    }
+
+    10% {
+      transform: translateX(100px) translateY(100px) rotateY(180deg);
+    }
+
+    20% {
+      transform: translateX(200px) translateY(200px) rotateY(360deg);
+    }
+
+    30% {
+      transform: translateX(300px) translateY(300px) rotateY(360deg) rotateX(180deg);
+    }
+
+    40% {
+      transform: translateX(300px) translateY(300px) rotateY(360deg) rotateX(360deg);
+    }
+
+    50% {
+      transform: translateX(300px) translateY(300px) rotateY(360deg) rotateX(360deg);
+    }
+
+    60% {
+      transform: translateX(300px) translateY(300px) rotateY(360deg) rotateX(360deg);
+    }
+
+    75% {
+      transform: translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg);
+    }
+
+    100% {
+      transform: translateX(0px) translateY(0px) rotateY(0deg) rotateX(0deg);
+    }
+  }
+
+  .cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transform: rotate3d(1, 1, 1, 0deg);
+    transform-style: preserve-3d;
+    animation: show 15s 2s linear infinite;
+  }
+
+  .face {
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+    background-color: #5c2223;
+    perspective: 300px;
+    position: absolute;
+  }
+
+  .front {
+    transform: translateZ(50px);
+    z-index: 6;
+  }
+
+  .back {
+    z-index: 5;
+    background-color: #eea2a4;
+    transform: translateZ(-50px) rotateY(180deg);
+  }
+
+  .right {
+    z-index: 4;
+    background-color: #ee3f4d;
+    transform: translateX(50px) rotateY(90deg);
+  }
+
+  .left {
+    z-index: 3;
+    background-color: #a7535a;
+    transform: translateX(-50px) rotateY(-90deg);
+  }
+
+  .top {
+    z-index: 2;
+    background-color: #f1939c;
+    transform: translateY(50px) rotateX(90deg) rotateY(180deg);
+  }
+
+  .bottom {
+    z-index: 1;
+    background-color: #82202b;
+    transform: translateY(-50px) rotateX(90deg);
+  }
+</style>
+</head>
+<body><section>
+  <figure>
+    <div class="container">
+      <div class="cube">
+        <div class="face front">1</div>
+        <div class="face back">2</div>
+        <div class="face right">3</div>
+        <div class="face left">4</div>
+        <div class="face top">5</div>
+        <div class="face bottom">6</div>
+      </div>
+    </div>
+  </figure>
+</body>
+</html>
